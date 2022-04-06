@@ -1,0 +1,134 @@
+:root {
+  --primary: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--very-dark-blue);
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--light-grey);
+  line-height: 1.5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--dark-blue);
+  border-radius: 20px;
+  width: 35rem;
+  padding: 2.5rem;
+}
+
+.btn {
+  width: 100%;
+  border-radius: 25px;
+  border: 0;
+  color: rgb(240, 240, 240);
+  background-color: var(--primary);
+  padding: 1.5rem 5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--primary);
+  background-color: #fff;
+}
+
+.card__logo {
+  box-shadow: 0 0 0 13px hsl(213, 20%, 23%);
+  background-color: hsl(213, 20%, 23%);
+  border-radius: 100%;
+  margin: 1rem;
+}
+
+.card__title {
+  color: rgb(255, 255, 255);
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+
+.selection {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.btn--select {
+  border-radius: 100%;
+  border: 0;
+  width: 4rem;
+  height: 4rem;
+  color: inherit;
+  background-color: hsl(213, 20%, 23%);
+  font-weight: 700;
+}
+
+.btn--select:hover {
+  background-color: var(--primary);
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn--select::selection {
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+.btn--selected:focus {
+  background-color: hsl(214, 26%, 65%);
+  color: #fff;
+}
+
+.card__thanks {
+  text-align: center;
+}
+.card__select {
+  color: var(--primary);
+}
+
+.card__select--ty {
+  padding: 5px 0 0 0;
+  background-color: rgb(46, 54, 66);
+  border-radius: 20px;
+  margin-top: 1rem;
+}
+
+.card__description {
+  margin-bottom: 2.5rem;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.hidden {
+  display: none;
+}
